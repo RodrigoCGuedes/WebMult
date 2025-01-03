@@ -66,6 +66,10 @@ PHP's built-in development server **does not support HTTPS/2 natively**, which i
   <p>Add the class to your PHP project:</p>
   <pre><code>require 'path/to/Mult.php';</code></pre>
 
+---
+
+## <h2>Example Configuration</h2>
+
   <strong>Initialize WebMult</strong>
   <p>Set up and run WebMult:</p>
   <pre><code>
@@ -86,8 +90,6 @@ print_r($results);
 </ol>
 
 ---
-
-## <h2>Example Configuration</h2>
 
 ### <h3>Configurations:</h3>
 <table>
