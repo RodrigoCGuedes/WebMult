@@ -58,7 +58,6 @@ PHP's built-in development server **does not support HTTPS/2 natively**, which i
     tls internal
 }
   </pre>
-
   <li><strong>Clone the Repository</strong></li>
   <p>Clone the repository to your project directory:</p>
   <pre><code>git clone https://github.com/RodrigoCGuedes/WebMult.git</code></pre>
@@ -67,7 +66,7 @@ PHP's built-in development server **does not support HTTPS/2 natively**, which i
   <p>Add the class to your PHP project:</p>
   <pre><code>require 'path/to/Mult.php';</code></pre>
 
-  <li><strong>Initialize WebMult</strong></li>
+  <strong>Initialize WebMult</strong>
   <p>Set up and run WebMult:</p>
   <pre><code>
 $mult = new Mult(
@@ -88,7 +87,7 @@ print_r($results);
 
 ---
 
-## <h2>Example Output</h2>
+## <h2>Example Configuration</h2>
 
 ### <h3>Configurations:</h3>
 <table>
@@ -164,4 +163,3 @@ print_r($results);
 This project is licensed under the [MIT License](LICENSE).
 
 ---
-
