@@ -1,0 +1,45 @@
+<h1>Example Instructions</h1>
+
+<p>These instructions will guide you through running the project using Docker. Follow the steps below to get started.</p>
+
+<h2>Prerequisites</h2>
+<p>Before proceeding, ensure you have the following installed and configured on your machine:</p>
+<ul>
+    <li><strong>Docker</strong>: A containerization platform. <a href="https://www.docker.com/get-started" target="_blank">Download Docker</a>.</li>
+    <li><strong>Docker Compose</strong>: A tool for defining and running multi-container Docker applications. Typically included with Docker Desktop.</li>
+</ul>
+
+<h2>Steps to Run the Example</h2>
+<ol>
+    <li><strong>Clone the Repository</strong>
+        <p>Clone the repository to your local machine:</p>
+        <pre><code>git clone https://github.com/RodrigoCGuedes/WebMult.git
+cd WebMult</code></pre>
+    </li>
+
+    <li><strong>Navigate to the Example Folder</strong>
+        <p>Inside the project directory, navigate to the <code>examples</code> folder:</p>
+        <pre><code>cd examples</code></pre>
+    </li>
+
+    <li><strong>Run the Docker Compose Command</strong>
+        <p>Build and start the application using Docker Compose:</p>
+        <pre><code>docker-compose up --build</code></pre>
+    </li>
+
+    <li><strong>Access the Application</strong>
+        <p>Once the containers are running, open your web browser and go to:</p>
+        <p><a href="https://127.0.0.1" target="_blank">https://127.0.0.1</a></p>
+    </li>
+</ol>
+
+<h2>Notes</h2>
+<ul>
+    <li>Ensure your Docker service is running before executing any commands.</li>
+    <li>The example uses <strong>HTTPS</strong>. You may need to accept an untrusted certificate in your browser for local environments.</li>
+    <li>To stop the application, use the following command:
+        <pre><code>docker-compose down</code></pre>
+    </li>
+</ul>
+
+<h2>Happy coding! 🚀</h2>

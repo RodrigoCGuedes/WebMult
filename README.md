@@ -57,7 +57,6 @@ PHP's built-in development server **does not support HTTP/2 natively**, which is
     file_server
     tls internal
 }
-
   </pre>
 
   <li><strong>Clone the Repository</strong></li>
