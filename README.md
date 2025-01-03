@@ -1,22 +1,22 @@
 # <h1 align="center">WebMult</h1>
 <p align="center">
-  <i>A powerful PHP class for simulating multithreading using HTTP requests.</i>
+  <i>A powerful PHP class for running tasks in parallel using HTTP requests, similar to multithreading.</i>
 </p>
 <p align="center">
   <img src="https://img.shields.io/badge/PHP-%3E=7.4-blue" alt="PHP Version">
-  <img src="https://img.shields.io/badge/HTTP/2-Compatible-brightgreen" alt="HTTP/2 Compatible">
+  <img src="https://img.shields.io/badge/HTTPS/2-Compatible-brightgreen" alt="HTTPS/2 Compatible">
   <img src="https://img.shields.io/github/license/RodrigoCGuedes/WebMult" alt="License">
 </p>
 
 ---
 
 ## <h2>📖 Introduction</h2>
-WebMult is a PHP class that enables multithreading by leveraging multiple HTTP requests. Each "thread" corresponds to a separate HTTP request, allowing for parallel execution of tasks in a controlled and efficient manner.
+WebMult is a PHP class that enables parallel execution of tasks by leveraging multiple HTTP requests, analogous to multithreading. Each "thread" corresponds to a separate HTTP request, allowing for efficient parallel execution of tasks.
 
 ---
 
 ## <h2>🚀 How It Works</h2>
-WebMult uses the `cURL` library to send multiple requests concurrently, simulating multithreading.  
+WebMult uses the `cURL` library to send multiple requests concurrently, simulating multithreaded execution.  
 It is especially useful for scenarios where:
 - Tasks can be distributed across multiple HTTP requests.
 - Parallel processing is required in PHP environments.
@@ -24,7 +24,7 @@ It is especially useful for scenarios where:
 ---
 
 ## <h2>⚠️ Compatibility</h2>
-PHP's built-in development server **does not support HTTP/2 natively**, which is essential for optimal performance. You must use a web server that supports HTTP/2, such as:
+PHP's built-in development server **does not support HTTPS/2 natively**, which is essential for optimal performance. You must use a web server that supports HTTPS/2, such as:
 - <strong>Caddy</strong> (Recommended)
 - Apache
 - Nginx
@@ -37,7 +37,7 @@ PHP's built-in development server **does not support HTTP/2 natively**, which is
 <ul>
   <li><strong>PHP 7.4+</strong> (recommended: PHP 8.0 or higher).</li>
   <li><strong>cURL</strong> extension enabled.</li>
-  <li>A web server with HTTP/2 support.</li>
+  <li>A web server with HTTPS/2 support.</li>
 </ul>
 
 ### **Steps to Set Up**
@@ -72,7 +72,7 @@ PHP's built-in development server **does not support HTTP/2 natively**, which is
   <pre><code>
 $mult = new Mult(
     "worker.php",
-    "http://caddy:80",
+    "https://caddy:443",
     3,
     [
         0 => ['api_key' => '123456', 'user' => 'Mercury'],
@@ -105,7 +105,7 @@ print_r($results);
     </tr>
     <tr>
       <td>Server</td>
-      <td>http://caddy:80</td>
+      <td>https://caddy:443</td>
     </tr>
     <tr>
       <td>Instances</td>
