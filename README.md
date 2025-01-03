@@ -1,6 +1,6 @@
 # <h1 align="center">WebMult</h1>
 <p align="center">
-  <i>A powerful PHP class for running tasks in parallel using HTTP requests, similar to multithreading.</i>
+  <i>A powerful PHP class for running tasks in parallel using HTTPS requests, similar to multithreading.</i>
 </p>
 <p align="center">
   <img src="https://img.shields.io/badge/PHP-%3E=7.4-blue" alt="PHP Version">
@@ -10,15 +10,15 @@
 
 ---
 
-## <h2>📖 Introduction</h2>
-WebMult is a PHP class that enables parallel execution of tasks by leveraging multiple HTTP requests, analogous to multithreading. Each "thread" corresponds to a separate HTTP request, allowing for efficient parallel execution of tasks.
+## <h2>Introduction</h2>
+WebMult is a PHP class that enables parallel execution of tasks by leveraging multiple HTTPS requests, analogous to multithreading. Each "thread" corresponds to a separate HTTPS request, allowing for efficient parallel execution of tasks.
 
 ---
 
 ## <h2>🚀 How It Works</h2>
 WebMult uses the `cURL` library to send multiple requests concurrently, simulating multithreaded execution.  
 It is especially useful for scenarios where:
-- Tasks can be distributed across multiple HTTP requests.
+- Tasks can be distributed across multiple HTTPS requests.
 - Parallel processing is required in PHP environments.
 
 ---
@@ -88,7 +88,7 @@ print_r($results);
 
 ---
 
-## <h2>📊 Example Output</h2>
+## <h2>Example Output</h2>
 
 ### <h3>Configurations:</h3>
 <table>
@@ -160,9 +160,8 @@ print_r($results);
 
 ---
 
-## <h2>📜 License</h2>
+## <h2>License</h2>
 This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-<p align="center">✨ Happy coding! ✨</p>
