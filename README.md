@@ -69,10 +69,9 @@ PHP's built-in development server **does not support HTTPS/2 natively**, which i
 ---
 
 ## <h2>Example Configuration</h2>
-
-  <strong>Initialize WebMult</strong>
-  <p>Set up and run WebMult:</p>
-  <pre><code>
+<strong>Initialize WebMult</strong>
+<p>Set up and run WebMult:</p>
+<pre><code>
 $mult = new Mult(
     "worker.php",
     "https://caddy:443",
